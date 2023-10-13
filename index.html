@@ -1,11 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>im mijjn</h1>1
-</body>
-</html>
+<!DOCTYPE html> <!-- 문서타입 htm15 -->
+<html> <!-- 시작태그 -->
+    <head> <!-- 머릿말 -->
+        <title>치이카와 자격증</title>
+        <meta charset="utf-8"  />
+        <!-- uft-8g 한글표현방법, euc-kr -->
+        <meta name="keywords" content="웹퍼블리싱, 계원, html, css"  />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body> <!-- 본문 -->
+        <a style="color: lightblue" href="sub.html">서브페이지</a>
+        <a href="https://www.google.com" target="blank" title="google"> 구글 바로가기</a> <!-- 새창열기, 커서 올리면 텍스트 나옴-->
+        <br> <!-- 엔터 -->
+        <img width="300px" height="auto" src="https://i.pinimg.com/564x/68/27/45/6827459465cb70f1911b2b7286ac5b5f.jpg" /> <!-- 이미지사이즈변경, 이미지주소복사 -->
+        <img /> <!-- 독립형태그 -->
+        <br>
+        <태그 속성="값">내용</태그>
+        <태그 속성="값" />
+
+        <h1>대한민국</h1>
+          <h2>서울특별시</h2>
+              <h3>영등포구</h3>
+          <h2>경기도</h2>
+              <h3>안양시</h3>
+              <h3>의왕시</h3>
+        <h1>미국</h1>
+        <h1>일본</h1>
+        <h1>중국</h1>
+
+        <p>문단은 한가지 주제를 가지고 있는 여러 문장으로 이루어진 단</p>
+
+        html에서는 띄어쓰기, <br /> 줄바꿈 무시
+        <hr /> <!-- 의미강조용 / 예쁜 절취선 아님 -->
+
+        <strong>강한 강조</strong>
+        <em>강조</em>
+        <!-- 의미를 부여 (비권장) -->
+
+        <b>굵은 글씨</b>
+        <i>기울림꼴(이텔렉체)</i>
+        <!-- 모양을 부여 (비권장) -->
+
+        <ins>추가글</ins>
+        <del>삭제글</del>
+        
+        <u>밑줄</u>
+        <strike>중간줄</strike>
+
+        윗첨자<sup>윗쪽에 붙여서 분연설명</sup>
+        아랫첨자<sup>아랫쪽에 붙여서 부연설명</sup>
+
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ul>
+
+        <ol>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ol>
+
+        <dl>
+            <dt>용어</dt>
+            <dd>용어설명</dd>
+            <dt>Html</dt>
+            <dd>Hyper Text Maekup Language</dd>
+        </dl>
+
+        <!-- 셀 만들기 -->
+        <style>
+            th,td{
+                border: solid 1px black;
+            }
+        </style> <!-- CSS -->
+        <table summary="table기본">
+            <caption>table기본형태</caption> <!-- 표 위에 제목이 생김 -->
+            <thead>
+                <tr><!-- 한 줄, row 행 -->
+                    <th scope="col" rowspan="2">제목1</th> <!-- rowspan: 세로 잡아 늘림 / 제목 한 칸, colum 열 / 세로로 두 줄 차지 -->
+                    <th scope="col" colspan="2">제목2</th> <!-- colspan: 가로 잡아 늘림-->
+                    <th scope="col" >제목3</th>
+                </tr>
+            </thaed>
+            <tr>
+                <td>내용1</td> <!-- 내용 한 칸 -->
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용1</td> <!-- 내용 한 칸 -->
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+             <tbody>
+                <!-- 표 본문 -->
+            </tbody>
+            <tfoot>
+                <!-- 표 끝 -->
+            </tfoot>
+        </table>
+
+        <div>블록(block)형 구획 나눔</div>
+        <span>인라인(inline)형 구획 나눔</span>
+        <!-- 의미없이 사용하기 좋은 태그 -->
+
+    <form>
+        <label foe="navbar">주민등록번호</label>
+        <input name="navbar" placeholder="-기호 없이 숫자만 입력해주세요"/>
+        <input type="text" value="123456" />
+        <input type="password" />
+
+        <input type="radio" value="1" name="p1" checked/>사과 <!-- 원형 체크박스 -->
+        <input type="radio" value="2" name="p1" />배
+        <input type="radio" value="3" name="p1" />딸기
+
+        <input type="checkbox" value="1" checked/>빨강 <!-- 네모 체크박스 -->
+        <input type="checkbox" value="2" />파랑
+        <input type="checkbox" value="3" />노랑
+
+        <select> <!-- 선택하는 것만 보여주는 박스 -->
+            <option>네이버</option>
+            <option>구글</option>
+            <option>계원</option>
+        </select>
+        <textarea rows="5" cols="60"> 여러줄의 장문을 작성 </textarea> <!-- 60글자에 5줄까지 작성할 수 있다-->
+
+        <input onclick="alert('버튼눌림');" type="button" value="버튼입니다" /> <!-- 경고창 같은 게 뜸 -->
+        <button><!-- html 코드를 중첩으로 사용가능 -->
+            <strong>
+                <ins>버튼입니다</ins>
+            </strong>
+        </button>
+        <input type="submit" value="제출" />
+    
+    </form>
+
+    <div></div> <!-- section의 대체품은 아님-->
+    <section>
+        <h1>구획 제목</h1>
+        구획 내용
+    </section>
+    <nav>
+        <ul>
+            <li><a href="링크주소1">버튼1</a></li>
+            <li><a href="링크주소2">버튼2</a></li>
+        </ul>
+        <a href="링크주소1">버튼1</a>
+        <a href="링크주소2">버튼2</a>
+    </nav>
+    <article> <!-- 문서 주제와 다소 벗어난 이야기 -->
+        <h1>기사 제목</h1>
+        기사 내용
+    </article>
+    <aside> <!-- 상관없는 이야기 -->
+        <h1>광고 제목</h1>
+        광고 내용
+    </aside>
+    <header></header> <!-- 본문(body)의 서론 -->
+    <footer></footer> <!-- 본문(body)의 결론 -->
+    
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        // get element by id
+        // id 기준으로 요소 가져오기
+        var ctx = canvas.getContext("2d");
+        // get context 내용 가져오기
+        ctx.fillStyle = "#ffa7ba"; // 색을 지정합니다
+        ctx.fillRect(25, 25, 100, 100);
+        ctx.clearRect(45, 45, 60, 60);
+        ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+    </script>
+    
+    <audio controls> <!-- 오디오 넣기 -->
+        <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg" />
+    </audio>
+
+    <video controls> <!-- 비디오 넣기 -->
+        <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ceJ94-Uxyw4?si=8siFFlUf3yomKtkN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </body>
+</html> <!-- 종료태그 -->
